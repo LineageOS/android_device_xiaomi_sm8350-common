@@ -8,9 +8,6 @@ COMMON_PATH := device/xiaomi/sm8350-common
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-# APEX image
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-
 # A/B
 AB_OTA_UPDATER := true
 
