@@ -70,6 +70,10 @@
     <!-- integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
     <integer name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
 
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
+
     <!-- Enable Aware NDP interface selection on interface that already has network set up.
      Note: the default AOSP Android does not support multiple networks on the same Aware NDI.
      Enabling this configuration will restore legacy behavior but may result in incorrect behavior.
