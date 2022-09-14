@@ -164,18 +164,6 @@
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
-    <!-- Idle current for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_idle_cur_ma">6</integer>
-
-    <!-- Rx current for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_rx_cur_ma">28</integer>
-
-    <!-- Tx current for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_tx_cur_ma">36</integer>
-
-    <!-- Operating voltage for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_operating_voltage_mv">3700</integer>
-
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
