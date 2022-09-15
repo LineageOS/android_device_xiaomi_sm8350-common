@@ -1,6 +1,4 @@
 # Bluetooth
-ro.bluetooth.library_name=libbluetooth_qti.so
-persist.vendor.btstack.enable.lpa=true
 vendor.bluetooth.soc=hastings
 
 # Charger
