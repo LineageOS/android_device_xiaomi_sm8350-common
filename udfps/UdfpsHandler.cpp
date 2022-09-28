@@ -60,7 +60,7 @@ static bool readBool(int fd) {
     return c != '0';
 }
 
-class XiaomiUdfpsHander : public UdfpsHandler {
+class XiaomiUdfpshandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
@@ -139,7 +139,7 @@ class XiaomiUdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiUdfpsHander();
+    return new XiaomiUdfpshandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
