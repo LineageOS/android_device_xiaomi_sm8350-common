@@ -55,9 +55,6 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 # Audio policy
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
-
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
