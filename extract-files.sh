@@ -63,10 +63,6 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-        vendor/etc/camera/pureShot_parameter.xml \
-        |vendor/etc/camera/pureView_parameter.xml)
-            sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
-            ;;
         vendor/etc/media_lahaina/video_system_specs.json \
         |vendor/etc/media_shima_v1/video_system_specs.json \
         |vendor/etc/media_yupik_v1/video_system_specs.json)
@@ -78,9 +74,6 @@ function blob_fixup() {
             ;;
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
-            ;;
-        vendor/lib64/hw/camera.qcom.so)
-            sed -i "s/\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63/\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74/g" "${2}"
             ;;
     esac
 }
