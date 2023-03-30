@@ -36,7 +36,7 @@ on charger
 
     write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
     write /config/usb_gadget/g1/strings/0x409/manufacturer ${ro.product.manufacturer}
-    write /config/usb_gadget/g1/strings/0x409/product ${ro.product.model}
+    write /config/usb_gadget/g1/strings/0x409/product ${vendor.usb.product_string}
     mkdir /config/usb_gadget/g1/functions/ffs.adb
 
     mkdir /config/usb_gadget/g1/configs/b.1 0770
@@ -62,7 +62,7 @@ on boot
 
     write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
     write /config/usb_gadget/g1/strings/0x409/manufacturer ${ro.product.manufacturer}
-    write /config/usb_gadget/g1/strings/0x409/product ${ro.product.model}
+    write /config/usb_gadget/g1/strings/0x409/product ${vendor.usb.product_string}
     mkdir /config/usb_gadget/g1/functions/mtp.gs0
     mkdir /config/usb_gadget/g1/functions/ptp.gs1
     mkdir /config/usb_gadget/g1/functions/accessory.gs2
