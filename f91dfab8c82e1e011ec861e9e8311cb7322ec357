@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7162cdd2_c3e62f25",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-04-12T10:16:42Z",
+      "side": 1,
+      "message": "We do not set vendor.usb.product_string",
+      "revId": "f91dfab8c82e1e011ec861e9e8311cb7322ec357",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
