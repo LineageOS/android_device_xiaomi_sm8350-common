@@ -4,6 +4,9 @@ genfscon sysfs /class/qcom-battery u:object_r:vendor_sysfs_battery_supply:s0
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc u:object_r:vendor_sysfs_fingerprint:s0
 
+# Touch
+genfscon sysfs /devices/virtual/touch/touch_dev/bump_sample_rate u:object_r:sysfs_touchpanel:s0
+
 # Wakeup nodes
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys6/wakeup u:object_r:sysfs_wakeup:s0

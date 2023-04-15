@@ -176,6 +176,11 @@ SOONG_CONFIG_xiaomiSm8350Vars += \
     vibrator_use_effect_stream
 SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream ?= false
 
+# Touch
+SOONG_CONFIG_NAMESPACES += XIAOMI_TOUCH
+SOONG_CONFIG_XIAOMI_TOUCH := HIGH_TOUCH_POLLING_PATH
+SOONG_CONFIG_XIAOMI_TOUCH_HIGH_TOUCH_POLLING_PATH := /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
