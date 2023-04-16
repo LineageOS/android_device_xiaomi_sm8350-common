@@ -16,6 +16,24 @@
       "message": "We did not implement this node in kernel and don\u0027t really see a reason to do so",
       "revId": "70997029561cd82776feb714877340162292c856",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b60646a1_1b6656d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32042
+      },
+      "writtenOn": "2023-04-16T12:11:19Z",
+      "side": 1,
+      "message": "Yes, I think there is some need for this, many 8350 devices such as haydn, mars/star, venus support high touch sampling rate, which can enhance the experience to some extent, especially in games",
+      "parentUuid": "c7e8c0f0_704b151e",
+      "revId": "70997029561cd82776feb714877340162292c856",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
