@@ -129,6 +129,9 @@ firmware_directories /vendor/firmware_mnt/image/
 
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
 
+# socinfo
+/sys/devices/soc0           serial_number            0000    root    root
+
 # mius iio devices
 /dev/iio:device*                                        0660   system     system
 /sys/bus/iio/devices/iio:device* buffer/enable                  0600 system system
