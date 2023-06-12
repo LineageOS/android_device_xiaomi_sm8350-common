@@ -1,0 +1,10 @@
+#
+# Copyright (C) 2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Powershare
+ on boot 
+    chown system system /sys/class/qcom-battery/reverse_chg_mode
+    chmod 0644 /sys/class/qcom-battery/reverse_chg_mode
