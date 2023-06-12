@@ -131,6 +131,10 @@ on boot
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
 
+    # Set Powershare permissions
+    chown system system /sys/class/qcom-battery/reverse_chg_mode
+    chmod 0644 /sys/class/qcom-battery/reverse_chg_mode
+
     write /dev/cpuset/audio-app/cpus 1-2
     # init the  cpuset value for the camera background,don't change the oder
     write /dev/cpuset/camera-background/background/cpus 0-2
