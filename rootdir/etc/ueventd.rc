@@ -137,3 +137,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Fingerprint
 /dev/goodix_fp            0660   system     system
+
+# Battery
+/sys/class/qcom-battery     reverse_chg_mode            0644    system  system
