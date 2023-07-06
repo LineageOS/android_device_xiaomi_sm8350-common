@@ -143,3 +143,4 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Fingerprint
 /dev/goodix_fp            0660   system     system
+/dev/fortsense_fp         0664   system     system
