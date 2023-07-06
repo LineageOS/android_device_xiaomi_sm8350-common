@@ -140,6 +140,3 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/bus/iio/devices/iio:device* buffer/enable                  0600 system system
 /sys/bus/iio/devices/iio:device* scan_elements/in_proximity_en  0600 system system
 /sys/bus/iio/devices/iio:device* scan_elements/in_timestamp_en  0600 system system
-
-# Fingerprint
-/dev/goodix_fp            0660   system     system
