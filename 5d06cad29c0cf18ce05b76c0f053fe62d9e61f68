@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f69642d5_5b8efbd6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-07-15T09:45:38Z",
+      "side": 1,
+      "message": "i\u0027m quite confident that this is not needed for devices with fod - this is just xiaomi debugging which is unused on aosp",
+      "revId": "5d06cad29c0cf18ce05b76c0f053fe62d9e61f68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
