@@ -137,8 +137,8 @@ function configure_memory_parameters() {
 		echo 0 > /proc/sys/vm/watermark_boost_factor
 	fi
 
-	#Spawn 2 kswapd threads which can help in fast reclaiming of pages
-	echo 2 > /proc/sys/vm/kswapd_threads
+	#Spawn 1 kswapd threads which can help in fast reclaiming of pages
+	echo 1 > /proc/sys/vm/kswapd_threads
 }
 
 rev=`cat /sys/devices/soc0/revision`
@@ -189,6 +189,12 @@ echo 0 > /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus
 echo 0-3 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
 
+#disable untrustedapp
+echo " " > /dev/cpuset/background/untrustedapp/cpus
+
+# Turn off scheduler boost at the end
+echo 0 > /proc/sys/kernel/sched_boost
+
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
@@ -197,9 +203,19 @@ echo 1152000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
-# configure input boost settings
-echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+devicename=`getprop ro.product.device`
+
+if [ "$devicename" == "taoyao" -o "$devicename" == "zijin" -o "$devicename" == "redwood" ]; then
+    # for L9 & K9E
+    # configure input boost settings
+    echo "0:1152000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+    echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+else
+    #default
+    # configure input boost settings
+    echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+    echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+fi
 
 # configure governor settings for gold cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
@@ -350,7 +366,8 @@ do
 	done
 done
 
-# set s2idle as default suspend mode
+#Enable sleep and set s2idle as default suspend mode
+echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 echo s2idle > /sys/power/mem_sleep
 
 configure_memory_parameters

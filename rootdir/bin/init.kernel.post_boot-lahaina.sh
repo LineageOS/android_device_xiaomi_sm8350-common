@@ -137,7 +137,7 @@ function configure_memory_parameters() {
 	fi
 
 	echo $LimitSize > /dev/memcg/camera/provider/memory.soft_limit_in_bytes
-
+	
 	if [ $MemTotal -le 8388608 ]; then
 		echo 0 > /proc/sys/vm/watermark_boost_factor
 	fi
@@ -193,6 +193,9 @@ echo 325 > /proc/sys/kernel/walt_low_latency_task_threshold
 # cpuset parameters
 echo 0-3 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
+
+# Turn off scheduler boost at the end
+echo 0 > /proc/sys/kernel/sched_boost
 
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
@@ -343,7 +346,9 @@ do
 	    echo 50 > $qoslat/mem_latency/ratio_ceil
 	done
 done
+echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 echo s2idle > /sys/power/mem_sleep
+
 configure_memory_parameters
 
 # Let kernel know our image version/variant/crm_version
@@ -361,5 +366,17 @@ if [ -f /sys/devices/soc0/select_image ]; then
 	echo $image_variant > /sys/devices/soc0/image_variant
 	echo $oem_version > /sys/devices/soc0/image_crm_version
 fi
+
+# Change console log level as per console config property
+console_config=`getprop persist.vendor.console.silent.config`
+case "$console_config" in
+	"1")
+		echo "Enable console config to $console_config"
+		echo 0 > /proc/sys/kernel/printk
+	;;
+	*)
+		echo "Enable console config to $console_config"
+	;;
+esac
 
 setprop vendor.post_boot.parsed 1
