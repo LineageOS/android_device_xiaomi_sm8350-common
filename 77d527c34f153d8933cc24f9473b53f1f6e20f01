@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aae4de57_4921a945",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-09T14:22:42Z",
+      "side": 1,
+      "message": "the perf rule really doesn\u0027t seem to be fingerprint related",
+      "revId": "77d527c34f153d8933cc24f9473b53f1f6e20f01",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
