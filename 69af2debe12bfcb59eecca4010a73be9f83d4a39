@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "753f5a4c_2047ea9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-09T14:18:31Z",
+      "side": 1,
+      "message": "why do you need 0644 on fod_hbm? Does anything without a proper group try to access it?",
+      "revId": "69af2debe12bfcb59eecca4010a73be9f83d4a39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
