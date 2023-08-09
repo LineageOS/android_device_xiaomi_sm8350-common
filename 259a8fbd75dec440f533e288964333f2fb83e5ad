@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "363d9016_1e354538",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-09T14:21:02Z",
+      "side": 1,
+      "message": "that\u0027s wrong, you are meant to label the wake-up dir, not the subdirs with numbers. check the other labels.",
+      "revId": "259a8fbd75dec440f533e288964333f2fb83e5ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
