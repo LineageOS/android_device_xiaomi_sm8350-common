@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a940c62_4afe4556",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-09T14:24:19Z",
+      "side": 1,
+      "message": "whitespace in init.xiaomi.rc \n\nalso don\u0027t create a new file for this, we add our additions to init.target.rc",
+      "revId": "9f684e1cea28b8e5fc0d22d2cd031553ce15b409",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
