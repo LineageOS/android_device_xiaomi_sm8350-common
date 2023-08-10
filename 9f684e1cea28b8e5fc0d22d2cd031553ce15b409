@@ -34,6 +34,24 @@
       "parentUuid": "1a940c62_4afe4556",
       "revId": "9f684e1cea28b8e5fc0d22d2cd031553ce15b409",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3083da7_230b6b99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-10T12:20:46Z",
+      "side": 1,
+      "message": "that makes no sense. it doesn\u0027t matter from which file you set the permissions on the node - the permissions are the same in the end.\nmake sure you add them within the proper stage and it is allowed to set these permissions.",
+      "parentUuid": "bf2dd04c_4174bab9",
+      "revId": "9f684e1cea28b8e5fc0d22d2cd031553ce15b409",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
