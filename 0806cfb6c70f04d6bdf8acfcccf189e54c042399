@@ -22,6 +22,29 @@
       },
       "revId": "0806cfb6c70f04d6bdf8acfcccf189e54c042399",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad23222f_39b920cf",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 10
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-12T08:09:07Z",
+      "side": 1,
+      "message": "I\u0027d prefer adding that below the chown system system on that node (if it\u0027s actually necessary)",
+      "range": {
+        "startLine": 164,
+        "startChar": 49,
+        "endLine": 164,
+        "endChar": 59
+      },
+      "revId": "0806cfb6c70f04d6bdf8acfcccf189e54c042399",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
