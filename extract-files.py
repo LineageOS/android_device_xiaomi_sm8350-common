@@ -56,6 +56,8 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('android.hidl.base@1.0.so')
         .add_needed('libbinder_shim.so')
         .add_needed('libinput_shim.so'),
+    'vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc': blob_fixup()
+        .add_line_if_missing('    task_profiles ServiceCapacityLow'),
     ('vendor/etc/media_lahaina/video_system_specs.json', 'vendor/etc/media_shima_v1/video_system_specs.json', 'vendor/etc/media_yupik_v1/video_system_specs.json'): blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
