@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f640464_6437c7d3",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 10
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-12T08:08:24Z",
+      "side": 1,
+      "message": "Do you really need 0660 here? This file is not meant to be writeable from the fingerprint hal",
+      "range": {
+        "startLine": 163,
+        "startChar": 70,
+        "endLine": 163,
+        "endChar": 76
+      },
+      "revId": "0806cfb6c70f04d6bdf8acfcccf189e54c042399",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
