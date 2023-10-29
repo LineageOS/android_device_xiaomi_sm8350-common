@@ -16,6 +16,24 @@
       "message": "just saying, but you should be able to create -21 branch.",
       "revId": "1895fbd45158f25c1640b97b36b5e50d5f1af54f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30b76e19_93435863",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32042
+      },
+      "writtenOn": "2023-10-29T15:27:39Z",
+      "side": 1,
+      "message": "Yes, the branch has been created, thanks for the reminder",
+      "parentUuid": "aa6133af_6d523ca5",
+      "revId": "1895fbd45158f25c1640b97b36b5e50d5f1af54f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
