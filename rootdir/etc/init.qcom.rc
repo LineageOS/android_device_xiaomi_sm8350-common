@@ -134,7 +134,9 @@ on post-fs-data
     mkdir /data/vendor/qtee 0770 system system
 
     # Create folder for camera
-    mkdir /data/vendor/camera 0770 camera camera
+    mkdir /data/vendor/camera 0777 camera camera
+    mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
+    chmod 0666 /dev/camlog
 
     # Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
