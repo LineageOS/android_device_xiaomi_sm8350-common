@@ -108,8 +108,10 @@ on post-fs-data
 
     # Create fingerprint related directory
     mkdir /data/vendor/fpc 0770 system system
+    mkdir /mnt/vendor/persist/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
 
 on early-boot
     # Enable WLAN cold boot calibration
