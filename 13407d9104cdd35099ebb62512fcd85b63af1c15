@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a11ec2c0_dad3f8a2",
+        "filename": "sepolicy/vendor/hal_fingerprint_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2023-12-24T17:04:37Z",
+      "side": 1,
+      "message": "Too generic",
+      "revId": "13407d9104cdd35099ebb62512fcd85b63af1c15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
