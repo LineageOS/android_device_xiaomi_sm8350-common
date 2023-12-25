@@ -16,6 +16,24 @@
       "message": "unnecessary\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8350-common/+/372462",
       "revId": "1b234e89d88411f11535e64b58827fd2de18f970",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01062f5d_c7c2d29f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-12-25T11:57:48Z",
+      "side": 1,
+      "message": "that\u0027s fine for now. We need to get the hardware/xiaomi part merged before we can switch to common one anyway.",
+      "parentUuid": "6d12eb65_dde9a8fb",
+      "revId": "1b234e89d88411f11535e64b58827fd2de18f970",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
