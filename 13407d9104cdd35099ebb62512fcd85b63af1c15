@@ -16,6 +16,24 @@
       "message": "Too generic",
       "revId": "13407d9104cdd35099ebb62512fcd85b63af1c15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75004b7b_df3d1cad",
+        "filename": "sepolicy/vendor/hal_fingerprint_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-12-25T11:59:28Z",
+      "side": 1,
+      "message": "Right, if you really need that please figure out which files in rootfs need to be accessed and label them properly and grant access to it then.",
+      "parentUuid": "a11ec2c0_dad3f8a2",
+      "revId": "13407d9104cdd35099ebb62512fcd85b63af1c15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
