@@ -52,6 +52,24 @@
       "parentUuid": "a11ec2c0_dad3f8a2",
       "revId": "13407d9104cdd35099ebb62512fcd85b63af1c15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f504db4d_3a813549",
+        "filename": "sepolicy/vendor/hal_fingerprint_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2023-12-28T08:21:17Z",
+      "side": 1,
+      "message": "lgtm",
+      "parentUuid": "b3bdf003_32d2a88e",
+      "revId": "13407d9104cdd35099ebb62512fcd85b63af1c15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
