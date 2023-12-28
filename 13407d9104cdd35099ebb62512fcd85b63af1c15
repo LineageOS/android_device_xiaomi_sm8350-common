@@ -34,6 +34,24 @@
       "parentUuid": "a11ec2c0_dad3f8a2",
       "revId": "13407d9104cdd35099ebb62512fcd85b63af1c15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3bdf003_32d2a88e",
+        "filename": "sepolicy/vendor/hal_fingerprint_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 19841
+      },
+      "writtenOn": "2023-12-28T02:10:50Z",
+      "side": 1,
+      "message": "Now is fine i think",
+      "parentUuid": "a11ec2c0_dad3f8a2",
+      "revId": "13407d9104cdd35099ebb62512fcd85b63af1c15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
