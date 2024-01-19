@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03b44b1e_089c1398",
+        "filename": "common.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 32591
+      },
+      "writtenOn": "2024-01-19T06:30:59Z",
+      "side": 1,
+      "message": "Maybe we also need its recovery vaniant?\nDeclared here: https://github.com/LineageOS/android_vendor_qcom_opensource_healthd-ext/blob/398ea4b554fffbed4a59294b51085b7eba8b5f5d/aidl/Android.bp#L42\n\nOn my test build health AIDL works fine. Should be fine to merge",
+      "range": {
+        "startLine": 236,
+        "startChar": 4,
+        "endLine": 236,
+        "endChar": 39
+      },
+      "revId": "04ff2f12045cb8e72633afcef7c2723825f8d1c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
