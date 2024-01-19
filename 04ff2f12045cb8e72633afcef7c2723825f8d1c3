@@ -22,6 +22,30 @@
       },
       "revId": "04ff2f12045cb8e72633afcef7c2723825f8d1c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95e15251_0ad56d5f",
+        "filename": "common.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2024-01-19T10:04:37Z",
+      "side": 1,
+      "message": "Recovery variant is used for non (v)AB targets",
+      "parentUuid": "03b44b1e_089c1398",
+      "range": {
+        "startLine": 236,
+        "startChar": 4,
+        "endLine": 236,
+        "endChar": 39
+      },
+      "revId": "04ff2f12045cb8e72633afcef7c2723825f8d1c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
