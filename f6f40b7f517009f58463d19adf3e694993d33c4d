@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "12964ccd_7f73126a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2024-01-26T17:38:42Z",
+      "side": 1,
+      "message": "it\u0027s not needed if GNSS HAL is built from source",
+      "revId": "f6f40b7f517009f58463d19adf3e694993d33c4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
