@@ -16,6 +16,24 @@
       "message": "it\u0027s not needed if GNSS HAL is built from source",
       "revId": "f6f40b7f517009f58463d19adf3e694993d33c4d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43c995da_991c6ff6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-01-26T19:15:31Z",
+      "side": 1,
+      "message": "true, if it\u0027s me then I\u0027d rather adapt it to work with AIDL natively than just shimming it (I already did that)",
+      "parentUuid": "12964ccd_7f73126a",
+      "revId": "f6f40b7f517009f58463d19adf3e694993d33c4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
