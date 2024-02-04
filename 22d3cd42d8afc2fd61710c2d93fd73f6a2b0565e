@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a08caa04_1b2dc18c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2024-02-04T14:59:44Z",
+      "side": 1,
+      "message": "Works fine on lisa\n\n```\nlisa / # cat /sys/class/qcom-battery/real_type\nPD_PPS\n```",
+      "revId": "22d3cd42d8afc2fd61710c2d93fd73f6a2b0565e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
