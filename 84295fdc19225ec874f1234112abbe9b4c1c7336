@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a7057f7_098af47b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32153
+      },
+      "writtenOn": "2024-03-06T07:24:23Z",
+      "side": 1,
+      "message": "Dear Reviewers,\nPlease take a look at my small change. I added support for vili (Xiaomi 11T Pro), which also uses SM8350.",
+      "revId": "84295fdc19225ec874f1234112abbe9b4c1c7336",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
