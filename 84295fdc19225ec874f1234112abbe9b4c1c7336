@@ -34,6 +34,24 @@
       "parentUuid": "9a7057f7_098af47b",
       "revId": "84295fdc19225ec874f1234112abbe9b4c1c7336",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "828cfa39_50e99ecc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32153
+      },
+      "writtenOn": "2024-05-20T18:44:50Z",
+      "side": 1,
+      "message": "Hi,\nI currently don\u0027t have access to the device, so my trees aren\u0027t public anymore.\nAs for the changes to the common device tree, this is the only one needed for vili.\nThis commit follows the efforts in adding all potential targets to the common trees, just as seen [here](https://github.com/LineageOS/android_device_xiaomi_sm8150-common/commit/e5e342041b9a746b5e7169d3bfb6c55b20721511).",
+      "parentUuid": "c4b681e6_aa2be524",
+      "revId": "84295fdc19225ec874f1234112abbe9b4c1c7336",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
