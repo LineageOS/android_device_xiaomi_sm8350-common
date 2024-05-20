@@ -52,6 +52,24 @@
       "parentUuid": "c4b681e6_aa2be524",
       "revId": "84295fdc19225ec874f1234112abbe9b4c1c7336",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f1ec9f5_a8f12721",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2024-05-20T19:32:19Z",
+      "side": 1,
+      "message": "I\u0027ll prefer that a maintainer \"that _still_ owns the device\" verifies the tree them self on `vili`, instead of just saying \"basing on ...\".\n\nSee it in this way;\n\n\u0027the device is in the guards, so support for it has been validated by someone\u0027",
+      "parentUuid": "828cfa39_50e99ecc",
+      "revId": "84295fdc19225ec874f1234112abbe9b4c1c7336",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
