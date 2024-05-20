@@ -16,6 +16,24 @@
       "message": "Dear Reviewers,\nPlease take a look at my small change. I added support for vili (Xiaomi 11T Pro), which also uses SM8350.",
       "revId": "84295fdc19225ec874f1234112abbe9b4c1c7336",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4b681e6_aa2be524",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-05-20T16:19:01Z",
+      "side": 1,
+      "message": "Hey, sorry for the late reply. Where can we find your device tree? Do you need any more changes to the common tree or kernel?",
+      "parentUuid": "9a7057f7_098af47b",
+      "revId": "84295fdc19225ec874f1234112abbe9b4c1c7336",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
