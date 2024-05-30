@@ -1,4 +1,4 @@
-on property:init.svc.vendor.charger=running
+on charger
     wait /sys/class/power_supply/usb/type
     start mi_thermald
 on boot
