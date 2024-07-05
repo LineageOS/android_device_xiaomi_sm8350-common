@@ -219,8 +219,6 @@ vendor.display.use_smooth_motion=0
 vendor.gralloc.disable_ubwc=0
 
 # Media
-debug.stagefright.ccodec=4
-debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
 
