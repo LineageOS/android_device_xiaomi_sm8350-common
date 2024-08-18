@@ -23,7 +23,8 @@
 /vendor/lib(64)?/rfsa/adsp/libsnpe_htp_v68_skel\.so u:object_r:same_process_hal_file:s0
 
 # IR
-/dev/ir_spi                                      u:object_r:ir_spi_device:s0
+/dev/lirc[0-9]+                                                    u:object_r:lirc_device:s0
+/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi               u:object_r:hal_ir_default_exec:s0
 
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1          u:object_r:hal_mlipay_default_exec:s0
