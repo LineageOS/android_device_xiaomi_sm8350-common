@@ -16,6 +16,24 @@
       "message": "is mars the only user of powershare?",
       "revId": "f9d6d1a169e5965985f50d19407f68b79f5e48e3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3d66a7e_c563e46c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32042
+      },
+      "writtenOn": "2024-08-30T06:20:55Z",
+      "side": 1,
+      "message": "Yes",
+      "parentUuid": "972e5247_3c064ac8",
+      "revId": "f9d6d1a169e5965985f50d19407f68b79f5e48e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
