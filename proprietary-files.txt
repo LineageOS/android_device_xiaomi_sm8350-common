@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from haydn V816.0.2.0.UKKMIXM
+# All unpinned blobs below are extracted from star V816.0.4.0.UKAMIXM
 
 # Current blobs with ELF checks disabled:
 # libOmxVideoDSMode depends on libOmxCore, which is a gnu makefile target
