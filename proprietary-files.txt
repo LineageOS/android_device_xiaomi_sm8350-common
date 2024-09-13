@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from haydn V816.0.2.0.UKKMIXM
+# All unpinned blobs below are extracted from haydn V816.0.6.0.UKKMIXM
 
 # ADSP
 vendor/bin/adsprpcd
