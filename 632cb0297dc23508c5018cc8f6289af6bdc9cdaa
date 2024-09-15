@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d972c66_ffea8cc6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33118
+      },
+      "writtenOn": "2024-09-15T12:03:01Z",
+      "side": 1,
+      "message": "Verified on redwood (sm8350-common).",
+      "revId": "632cb0297dc23508c5018cc8f6289af6bdc9cdaa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
