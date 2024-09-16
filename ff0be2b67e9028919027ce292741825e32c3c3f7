@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5effd55c_08a21c9c",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-09-16T18:14:11Z",
+      "side": 1,
+      "message": "You missed removing it here as well\n```suggestion\n    write_makefiles \"${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt\"\n```",
+      "revId": "ff0be2b67e9028919027ce292741825e32c3c3f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
