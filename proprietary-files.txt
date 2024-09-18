@@ -3,7 +3,6 @@
 # Current blobs with ELF checks disabled:
 # libOmxVideoDSMode depends on libOmxCore, which is a gnu makefile target
 # libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
-# libwfdmmsrc_proprietary depends on libwfdaac_vendor, which is a gnu makefile target
 
 # ADSP
 vendor/bin/adsprpcd
@@ -815,7 +814,7 @@ vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdhdcpservice_proprietary.so
 vendor/lib/libwfdmminterface_proprietary.so
 vendor/lib/libwfdmmservice_proprietary.so
-vendor/lib/libwfdmmsrc_proprietary.so;DISABLE_CHECKELF
+vendor/lib/libwfdmmsrc_proprietary.so
 vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib/libwfdrtsp_proprietary.so
 vendor/lib/libwfdsessionmodule.so
