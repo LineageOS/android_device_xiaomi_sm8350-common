@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15cee674_9c52aeb7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-24T07:03:47Z",
+      "side": 1,
+      "message": "it should be XiaomiUdfpsHandler, with capital H.",
+      "revId": "6be42618e04c2ceed814d9ccff17d71694124045",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
