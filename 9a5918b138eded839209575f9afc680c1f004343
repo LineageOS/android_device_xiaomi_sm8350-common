@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc40f7d5_578c643e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33118
+      },
+      "writtenOn": "2024-09-25T20:48:55Z",
+      "side": 1,
+      "message": "Verified on redwood (sm8350-common) and NFC works on global and china variants only as intended.",
+      "revId": "9a5918b138eded839209575f9afc680c1f004343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
