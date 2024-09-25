@@ -109,11 +109,11 @@ class XiaomiUdfpsHander : public UdfpsHandler {
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        // nothing
+        set(FOD_STATUS_PATH, FOD_STATUS_ON);
     }
 
     void onFingerUp() {
-        // nothing
+        set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
