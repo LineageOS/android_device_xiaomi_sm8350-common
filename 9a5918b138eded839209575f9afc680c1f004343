@@ -16,6 +16,23 @@
       "message": "Verified on redwood (sm8350-common) and NFC works on global and china variants only as intended.",
       "revId": "9a5918b138eded839209575f9afc680c1f004343",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea86ceba_d863b658",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32042
+      },
+      "writtenOn": "2024-09-26T00:20:43Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_device_xiaomi_haydn/blob/lineage-21/rootdir/etc/init.haydn.rc\nhttps://github.com/LineageOS/android_device_xiaomi_haydn/commit/001f495ce855b4392f662a090f3fc4bbb9c8f196",
+      "revId": "9a5918b138eded839209575f9afc680c1f004343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
