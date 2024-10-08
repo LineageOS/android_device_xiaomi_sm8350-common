@@ -69,6 +69,24 @@
       "parentUuid": "b305181f_e7924f9e",
       "revId": "9a5918b138eded839209575f9afc680c1f004343",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "122dbc36_73c202cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33118
+      },
+      "writtenOn": "2024-10-08T10:38:33Z",
+      "side": 1,
+      "message": "I\u0027ve tested the patchset from haydn and NFC isn\u0027t initialized on indian variant of redwood as intended. But on China and Global variant, NFC toggle does not appear in settings.\nThis proposed patch seems to fix my issue.",
+      "parentUuid": "8dd9dddc_babd4165",
+      "revId": "9a5918b138eded839209575f9afc680c1f004343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
