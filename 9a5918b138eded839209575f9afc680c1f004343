@@ -33,6 +33,24 @@
       "message": "https://github.com/LineageOS/android_device_xiaomi_haydn/blob/lineage-21/rootdir/etc/init.haydn.rc\nhttps://github.com/LineageOS/android_device_xiaomi_haydn/commit/001f495ce855b4392f662a090f3fc4bbb9c8f196",
       "revId": "9a5918b138eded839209575f9afc680c1f004343",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b305181f_e7924f9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33118
+      },
+      "writtenOn": "2024-10-08T09:14:03Z",
+      "side": 1,
+      "message": "I see. Though there it seems that NFC permissions and manifest entries are still copied on non-nfc supported variants. Isn\u0027t that redundant?",
+      "parentUuid": "ea86ceba_d863b658",
+      "revId": "9a5918b138eded839209575f9afc680c1f004343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
