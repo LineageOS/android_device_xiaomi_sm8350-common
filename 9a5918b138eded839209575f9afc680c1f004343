@@ -51,6 +51,24 @@
       "parentUuid": "ea86ceba_d863b658",
       "revId": "9a5918b138eded839209575f9afc680c1f004343",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8dd9dddc_babd4165",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32042
+      },
+      "writtenOn": "2024-10-08T10:10:31Z",
+      "side": 1,
+      "message": "But it doesn\u0027t affect non-NFC variants, does it?",
+      "parentUuid": "b305181f_e7924f9e",
+      "revId": "9a5918b138eded839209575f9afc680c1f004343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
