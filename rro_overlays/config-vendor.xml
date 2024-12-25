@@ -4,6 +4,7 @@
 -->
 <config>
     <overlay package="android.overlay.sm8350" mutable="false" enabled="true" />
+    <overlay package="com.android.networkstack.tethering.overlay.ncm" mutable="false" enabled="true" />
     <overlay package="com.android.settings.overlay.sm8350" mutable="false" enabled="true" />
     <overlay package="com.android.systemui.overlay.sm8350" mutable="false" enabled="true" />
     <overlay package="com.android.wifi.resources.overlay.sm8350" mutable="false" enabled="true" />
