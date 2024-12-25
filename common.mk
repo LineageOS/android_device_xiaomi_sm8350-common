@@ -317,6 +317,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworkOverlaySM8350 \
+    NcmTetheringOverlay \
     SettingsOverlaySM8350 \
     SystemUIOverlaySM8350 \
     WifiOverlaySM8350
