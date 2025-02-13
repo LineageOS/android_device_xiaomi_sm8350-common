@@ -316,8 +316,13 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlaySM8350 \
+    CarrierConfigOverlaySM8350
+
+PRODUCT_PACKAGES += \
     WifiOverlaySM8350
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rro_overlays/config-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/config.xml
 
 # Partitions
 PRODUCT_PACKAGES += \
