@@ -304,7 +304,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlaySM8350 \
+    CarrierConfigOverlaySM8350
+
+PRODUCT_PACKAGES += \
     WifiOverlaySM8350
 
 # Partitions
