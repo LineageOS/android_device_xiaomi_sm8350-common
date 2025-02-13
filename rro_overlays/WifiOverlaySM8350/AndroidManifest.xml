@@ -6,7 +6,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.wifi.resources.overlay.sm8350">
     <overlay
-        android:isStatic="true"
         android:targetName="WifiCustomization"
         android:targetPackage="com.android.wifi.resources" />
 </manifest>

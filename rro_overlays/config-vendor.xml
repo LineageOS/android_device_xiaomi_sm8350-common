@@ -1,0 +1,7 @@
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <overlay package="com.android.wifi.resources.overlay.sm8350" mutable="false" enabled="true" />
+</config>
