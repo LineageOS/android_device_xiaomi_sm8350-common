@@ -8,6 +8,7 @@
 
 #include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
+#include <android-base/unique_fd.h>
 
 #include <fcntl.h>
 #include <poll.h>
@@ -65,27 +66,27 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
         mDevice = device;
 
         std::thread([this]() {
-            int fodUiFd = open(FOD_UI_PATH, O_RDONLY);
-            if (fodUiFd < 0) {
-                LOG(ERROR) << "failed to open fodUiFd, err: " << fodUiFd;
+            android::base::unique_fd fd(open(FOD_UI_PATH, O_RDONLY));
+            if (fd < 0) {
+                LOG(ERROR) << "failed to open " << FOD_UI_PATH << " , err: " << fd;
                 return;
             }
 
-            struct pollfd fds[1] = {
-                    {fodUiFd, .events = POLLERR | POLLPRI, .revents = 0},
+            struct pollfd fodUiPoll = {
+                    .fd = fd.get(),
+                    .events = POLLERR | POLLPRI,
+                    .revents = 0,
             };
 
             while (true) {
-                int rc = poll(fds, 1, -1);
+                int rc = poll(&fodUiPoll, 1, -1);
                 if (rc < 0) {
-                    if (fds[0].revents & POLLERR) {
-                        LOG(ERROR) << "failed to poll fodUiFd, err: " << rc;
-                    }
+                    LOG(ERROR) << "failed to poll " << FOD_UI_PATH << ", err: " << rc;
                     continue;
                 }
 
-                if (fds[0].revents & (POLLERR | POLLPRI)) {
-                    bool nitState = readBool(fodUiFd);
+                if (fodUiPoll.revents & (POLLERR | POLLPRI)) {
+                    bool nitState = readBool(fd.get());
                     mDevice->extCmd(mDevice, COMMAND_NIT,
                                     nitState ? PARAM_NIT_UDFPS : PARAM_NIT_NONE);
                 }
