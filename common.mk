@@ -309,16 +309,18 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlaySM8350
+    CarrierConfigOverlaySM8350 \
+    DialerOverlaySM8350 \
+    LineageSDKOverlaySM8350 \
+    TelephonyOverlaySM8350
 
 PRODUCT_PACKAGES += \
+    FrameworkOverlaySM8350 \
+    SettingsOverlaySM8350 \
+    SystemUIOverlaySM8350 \
     WifiOverlaySM8350
 
 PRODUCT_COPY_FILES += \
