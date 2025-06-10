@@ -3,5 +3,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <config>
+    <overlay package="android.overlay.sm8350" mutable="false" enabled="true" />
+    <overlay package="com.android.settings.overlay.sm8350" mutable="false" enabled="true" />
+    <overlay package="com.android.systemui.overlay.sm8350" mutable="false" enabled="true" />
     <overlay package="com.android.wifi.resources.overlay.sm8350" mutable="false" enabled="true" />
 </config>
