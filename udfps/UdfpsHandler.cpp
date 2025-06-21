@@ -10,8 +10,8 @@
 #include <android-base/logging.h>
 
 #include <fcntl.h>
-#include <fstream>
 #include <poll.h>
+#include <fstream>
 #include <thread>
 
 #include "UdfpsHandler.h"
@@ -82,8 +82,8 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
             }
 
             struct pollfd fds[2] = {
-                {fodUiFd, .events = POLLERR | POLLPRI, .revents = 0},
-                {fodPressStatusFd, .events = POLLERR | POLLPRI, .revents = 0},
+                    {fodUiFd, .events = POLLERR | POLLPRI, .revents = 0},
+                    {fodPressStatusFd, .events = POLLERR | POLLPRI, .revents = 0},
             };
 
             while (true) {
@@ -100,12 +100,14 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
 
                 if (fds[0].revents & (POLLERR | POLLPRI)) {
                     bool nitState = readBool(fodUiFd);
-                    mDevice->extCmd(mDevice, COMMAND_NIT, nitState ? PARAM_NIT_UDFPS : PARAM_NIT_NONE);
+                    mDevice->extCmd(mDevice, COMMAND_NIT,
+                                    nitState ? PARAM_NIT_UDFPS : PARAM_NIT_NONE);
                 }
 
                 if (fds[1].revents & (POLLERR | POLLPRI)) {
                     bool pressState = readBool(fodPressStatusFd);
-                    mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, pressState ? PARAM_FOD_PRESSED : PARAM_FOD_RELEASED);
+                    mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS,
+                                    pressState ? PARAM_FOD_PRESSED : PARAM_FOD_RELEASED);
                 }
             }
         }).detach();
@@ -115,9 +117,7 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
         set(FOD_STATUS_PATH, FOD_STATUS_ON);
     }
 
-    void onFingerUp() {
-        set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-    }
+    void onFingerUp() { set(FOD_STATUS_PATH, FOD_STATUS_OFF); }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
         if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
