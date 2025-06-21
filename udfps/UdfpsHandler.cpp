@@ -21,20 +21,16 @@
 #define PARAM_NIT_UDFPS 1
 #define PARAM_NIT_NONE 0
 
-// Touchscreen and HBM
-#define FOD_HBM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm"
-#define FOD_STATUS_PATH "/sys/devices/virtual/touch/tp_dev/fod_status"
-#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
-#define FOD_PRESS_STATUS_PATH "/sys/class/touch/touch_dev/fod_press_status"
-
-#define FOD_HBM_OFF 0
-#define FOD_HBM_ON 1
-#define FOD_STATUS_OFF 0
-#define FOD_STATUS_ON 1
-
 #define COMMAND_FOD_PRESS_STATUS 1
 #define PARAM_FOD_PRESSED 1
 #define PARAM_FOD_RELEASED 0
+
+// Touchscreen and HBM
+#define FOD_HBM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm"
+#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
+
+#define FOD_HBM_OFF 0
+#define FOD_HBM_ON 1
 
 using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
@@ -70,30 +66,20 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
 
         std::thread([this]() {
             int fodUiFd = open(FOD_UI_PATH, O_RDONLY);
-            int fodPressStatusFd = open(FOD_PRESS_STATUS_PATH, O_RDONLY);
             if (fodUiFd < 0) {
                 LOG(ERROR) << "failed to open fodUiFd, err: " << fodUiFd;
                 return;
             }
 
-            if (fodPressStatusFd < 0) {
-                LOG(ERROR) << "failed to open fodPressStatusFd, err: " << fodPressStatusFd;
-                return;
-            }
-
-            struct pollfd fds[2] = {
+            struct pollfd fds[1] = {
                     {fodUiFd, .events = POLLERR | POLLPRI, .revents = 0},
-                    {fodPressStatusFd, .events = POLLERR | POLLPRI, .revents = 0},
             };
 
             while (true) {
-                int rc = poll(fds, 2, -1);
+                int rc = poll(fds, 1, -1);
                 if (rc < 0) {
                     if (fds[0].revents & POLLERR) {
                         LOG(ERROR) << "failed to poll fodUiFd, err: " << rc;
-                    }
-                    if (fds[1].revents & POLLERR) {
-                        LOG(ERROR) << "failed to poll fodPressStatusFd, err: " << rc;
                     }
                     continue;
                 }
@@ -103,40 +89,42 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
                     mDevice->extCmd(mDevice, COMMAND_NIT,
                                     nitState ? PARAM_NIT_UDFPS : PARAM_NIT_NONE);
                 }
-
-                if (fds[1].revents & (POLLERR | POLLPRI)) {
-                    bool pressState = readBool(fodPressStatusFd);
-                    mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS,
-                                    pressState ? PARAM_FOD_PRESSED : PARAM_FOD_RELEASED);
-                }
             }
         }).detach();
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        set(FOD_STATUS_PATH, FOD_STATUS_ON);
+        set(FOD_HBM_PATH, FOD_HBM_ON);
+        mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, PARAM_FOD_PRESSED);
     }
 
-    void onFingerUp() { set(FOD_STATUS_PATH, FOD_STATUS_OFF); }
+    void onFingerUp() {
+        set(FOD_HBM_PATH, FOD_HBM_OFF);
+        mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, PARAM_FOD_RELEASED);
+    }
 
-    void onAcquired(int32_t result, int32_t vendorCode) {
-        if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
-            set(FOD_HBM_PATH, FOD_HBM_OFF);
-            set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-        } else if (vendorCode == 21) {
-            /*
-             * vendorCode = 21 waiting for finger
-             * vendorCode = 22 finger down
-             * vendorCode = 23 finger up
-             */
-            set(FOD_STATUS_PATH, FOD_STATUS_ON);
+    void onAcquired(int32_t result, int32_t /*vendorCode*/) {
+        switch (static_cast<AcquiredInfo>(result)) {
+            case AcquiredInfo::GOOD:
+            case AcquiredInfo::PARTIAL:
+            case AcquiredInfo::INSUFFICIENT:
+            case AcquiredInfo::SENSOR_DIRTY:
+            case AcquiredInfo::TOO_SLOW:
+            case AcquiredInfo::TOO_FAST:
+            case AcquiredInfo::TOO_DARK:
+            case AcquiredInfo::TOO_BRIGHT:
+            case AcquiredInfo::IMMOBILE:
+            case AcquiredInfo::LIFT_TOO_SOON:
+                onFingerUp();
+                break;
+            default:
+                break;
         }
     }
 
-    void cancel() {
-        set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-        set(FOD_HBM_PATH, FOD_HBM_OFF);
-    }
+    void onAuthenticationSucceeded() { onFingerUp(); }
+
+    void onAuthenticationFailed() { onFingerUp(); }
 
   private:
     fingerprint_device_t* mDevice;
