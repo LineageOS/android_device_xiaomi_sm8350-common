@@ -95,6 +95,7 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
+        if (mAuthSuccess) return;
         set(FOD_HBM_PATH, FOD_HBM_ON);
         mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, PARAM_FOD_PRESSED);
     }
@@ -123,12 +124,20 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
         }
     }
 
-    void onAuthenticationSucceeded() { onFingerUp(); }
+    void onAuthenticationSucceeded() {
+        mAuthSuccess = true;
+        onFingerUp();
+        std::thread([this]() {
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            mAuthSuccess = false;
+        }).detach();
+    }
 
     void onAuthenticationFailed() { onFingerUp(); }
 
   private:
     fingerprint_device_t* mDevice;
+    bool mAuthSuccess = false;
 };
 
 static UdfpsHandler* create() {
