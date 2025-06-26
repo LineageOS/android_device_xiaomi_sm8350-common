@@ -16,6 +16,24 @@
       "message": "@arian.kulmer@web.de Should this be fd.get() \u003c 0?\n\n```suggestion\n            if (fd.get() \u003c 0) {\n```",
       "revId": "ce74eeeb210ecb3d1979284a09934621cc5ec44a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2c7ab657_bdc5e68f",
+        "filename": "udfps/UdfpsHandler.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-06-26T20:48:45Z",
+      "side": 1,
+      "message": "no:\n\n```\nbool operator\u003e\u003d(int rhs) const { return get() \u003e\u003d rhs; }\nbool operator\u003c(int rhs) const { return get() \u003c rhs; }\nbool operator\u003d\u003d(int rhs) const { return get() \u003d\u003d rhs; }\nbool operator!\u003d(int rhs) const { return get() !\u003d rhs; }\nbool operator\u003d\u003d(const unique_fd_impl\u0026 rhs) const { return get() \u003d\u003d rhs.get(); }\nbool operator!\u003d(const unique_fd_impl\u0026 rhs) const { return get() !\u003d rhs.get(); }\n```",
+      "parentUuid": "251e205f_e23e64a1",
+      "revId": "ce74eeeb210ecb3d1979284a09934621cc5ec44a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
