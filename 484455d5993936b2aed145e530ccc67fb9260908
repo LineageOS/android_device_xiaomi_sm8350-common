@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92ef6034_aa7f2e86",
+        "filename": "rootdir/etc/init.recovery.qcom.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-06-30T15:48:46Z",
+      "side": 1,
+      "message": "Useless wait?",
+      "revId": "484455d5993936b2aed145e530ccc67fb9260908",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
