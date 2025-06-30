@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15344156_1f6bd144",
+        "filename": "rootdir/etc/init.recovery.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-06-30T14:52:57Z",
+      "side": 0,
+      "message": "is it intended to remove this?",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 75
+      },
+      "revId": "b040520cfcf402543f882852dc82e5f5dea0f8c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
