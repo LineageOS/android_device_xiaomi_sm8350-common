@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f15ed782_31eb801b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-06-30T15:04:21Z",
+      "side": 1,
+      "message": "this is not labelled as such on stock intentionally. MiuiCamera is meant to fail loading this on modern devices and uses the new init method then (V11 instead of V10 which uses the system libs instead)",
+      "revId": "ef458c0a3cdf9e1ab9ca04b81ce40a1ffb06fdaa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
