@@ -22,6 +22,30 @@
       },
       "revId": "b040520cfcf402543f882852dc82e5f5dea0f8c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5b65208_b28ddc5e",
+        "filename": "rootdir/etc/init.recovery.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2025-06-30T15:34:13Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "15344156_1f6bd144",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 75
+      },
+      "revId": "b040520cfcf402543f882852dc82e5f5dea0f8c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
