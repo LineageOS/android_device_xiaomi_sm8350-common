@@ -16,6 +16,23 @@
       "message": "For 23",
       "revId": "b25c4bad7649b14a2bb9580f2f774da1758d267b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4ad34cf_87c1e445",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32197
+      },
+      "writtenOn": "2025-07-15T06:29:25Z",
+      "side": 1,
+      "message": "Note that the original commit doesn\u0027t enable the toggle by default. Update the patch if you prefer disabling it.",
+      "revId": "b25c4bad7649b14a2bb9580f2f774da1758d267b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
