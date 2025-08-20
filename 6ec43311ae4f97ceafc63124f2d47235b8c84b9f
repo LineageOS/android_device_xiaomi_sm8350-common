@@ -16,6 +16,24 @@
       "message": "this should not be removed, manifest_no_nfc overwrites it.",
       "revId": "6ec43311ae4f97ceafc63124f2d47235b8c84b9f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3964e65d_7748d825",
+        "filename": "hidl/manifest_lahaina.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 33118
+      },
+      "writtenOn": "2025-08-20T20:09:12Z",
+      "side": 0,
+      "message": "\u003e this should not be removed, manifest_no_nfc overwrites it.\nBut those entries at manifest_lahaina.xml are permanently unused forever. So, why not remove them even if there\u0027s \"overwrite\" in manifest_nfc/no_nfc.xml?",
+      "parentUuid": "d40e511e_3d4c61d2",
+      "revId": "6ec43311ae4f97ceafc63124f2d47235b8c84b9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
