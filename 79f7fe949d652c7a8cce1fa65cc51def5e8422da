@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fccb7fbc_a6122093",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36013
+      },
+      "writtenOn": "2025-09-30T13:46:25Z",
+      "side": 1,
+      "message": "This ia for lineage-23.0",
+      "revId": "79f7fe949d652c7a8cce1fa65cc51def5e8422da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
