@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce4e784c_45ec76bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36013
+      },
+      "writtenOn": "2025-09-30T13:31:48Z",
+      "side": 1,
+      "message": "the hotspot will use 802.11ax instead of 802.11ac.",
+      "revId": "dbae6dfc779e6e442f4253df53a2b9193be43ad2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
