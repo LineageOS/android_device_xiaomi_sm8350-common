@@ -1,0 +1,9 @@
+cc_library_static {
+    name: "power-mode-ext",
+    srcs: ["power-mode.cpp"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "android.hardware.power-V5-ndk",
+    ],
+}
