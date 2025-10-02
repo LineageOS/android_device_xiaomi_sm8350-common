@@ -33,6 +33,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_sony_sm8350-common/+/450211",
       "revId": "dbae6dfc779e6e442f4253df53a2b9193be43ad2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c67b7380_9fdcba9d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-10-02T19:06:27Z",
+      "side": 1,
+      "message": "Unrelated, this tree doesn\u0027t have old flag.",
+      "parentUuid": "1ad50494_81da90c6",
+      "revId": "dbae6dfc779e6e442f4253df53a2b9193be43ad2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
