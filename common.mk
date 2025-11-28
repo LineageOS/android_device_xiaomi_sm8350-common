@@ -326,7 +326,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySM8350 \
-    DialerOverlaySM8350 \
     LineageSDKOverlaySM8350 \
     TelephonyOverlaySM8350
 
