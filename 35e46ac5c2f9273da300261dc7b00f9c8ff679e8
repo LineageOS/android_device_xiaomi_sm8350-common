@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "166e349c_75fc2d85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2025-12-18T14:01:53Z",
+      "side": 1,
+      "message": "Until we decide if we want to move to OSS audio HAL or not",
+      "revId": "35e46ac5c2f9273da300261dc7b00f9c8ff679e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
