@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2765212_0bc6c56d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35497
+      },
+      "writtenOn": "2026-02-14T04:32:36Z",
+      "side": 1,
+      "message": "Waiting for lineage-23.2 to merge this commit",
+      "revId": "fb84d0c98e36db0574d2c20258f4cc70805446af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
