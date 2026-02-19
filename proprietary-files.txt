@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from redwood OS2.0.11.0.UMSMIXM
+# All unpinned blobs below are extracted from redwood OS2.0.17.0.UMSMIXM
 # dada: dada OS2.0.217.0.WOCMIXM
 # sunstone: sunstone OS2.0.4.0.UMQMIXM
 
@@ -636,6 +636,7 @@ vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
 vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
 vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/libmisight.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
