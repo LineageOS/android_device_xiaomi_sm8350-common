@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca9d1893_5c7d8992",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-02-20T16:25:07Z",
+      "side": 1,
+      "message": "```suggestion\nPurely for asthetics.\n```",
+      "range": {
+        "startLine": 9,
+        "startChar": 11,
+        "endLine": 9,
+        "endChar": 19
+      },
+      "revId": "609d5547ea68ee31de4cc43d778a4c43abf94474",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
