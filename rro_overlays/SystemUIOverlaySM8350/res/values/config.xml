@@ -3,12 +3,9 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
-
-    <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
-    <bool name="doze_suspend_display_state_supported">false</bool>
 
     <!-- Type of a sensor that provides a low-power estimate of the desired display
          brightness, suitable to listen to while the device is asleep (e.g. during
@@ -16,7 +13,8 @@
     <string name="doze_brightness_sensor_type" translatable="false">xiaomi.sensor.aod</string>
 
     <!-- Doze: Table that translates sensor values from the doze_brightness_sensor_type sensor
-               to brightness values; -1 means keeping the current brightness. -->
+               to brightness values in the integer scale [1, 255]; -1 means keeping the current
+               brightness. -->
     <integer-array name="config_doze_brightness_sensor_to_brightness">
         <item>-1</item>    <!-- 0.0: Never used -->
         <item>-1</item>    <!-- 1.0: Never used -->

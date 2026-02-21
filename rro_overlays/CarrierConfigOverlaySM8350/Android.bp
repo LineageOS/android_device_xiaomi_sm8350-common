@@ -5,6 +5,6 @@
 
 runtime_resource_overlay {
     name: "CarrierConfigOverlaySM8350",
-    aaptflags: ["--keep-raw-values"],
     product_specific: true,
+    aaptflags: ["--keep-raw-values"],
 }
