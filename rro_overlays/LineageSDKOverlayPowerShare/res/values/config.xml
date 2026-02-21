@@ -3,7 +3,7 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- Whether the device supports wireless charging or not -->
     <bool name="config_deviceSupportsWirelessCharging">true</bool>
 </resources>
