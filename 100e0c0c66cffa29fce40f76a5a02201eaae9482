@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87127360_a204681e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36466
+      },
+      "writtenOn": "2026-02-21T04:04:33Z",
+      "side": 1,
+      "message": "I guess you could just build it for all devices 😉 or is there a reason for doing this?",
+      "revId": "100e0c0c66cffa29fce40f76a5a02201eaae9482",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
