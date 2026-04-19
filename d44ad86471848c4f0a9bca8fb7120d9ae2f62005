@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "433228b7_1abc68f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-19T16:19:38Z",
+      "side": 1,
+      "message": "doesn\u0027t hurt. targets are still expected to use prebuilt one _for now_.",
+      "revId": "d44ad86471848c4f0a9bca8fb7120d9ae2f62005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
