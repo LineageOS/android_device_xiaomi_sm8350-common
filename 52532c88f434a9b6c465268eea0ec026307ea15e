@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca6405cf_854f1ad9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-20T08:46:49Z",
+      "side": 1,
+      "message": "boot image is newer than vendor, at the very least, it should have been platform patch, but we can\u0027t guarantee kernel src will have said patches applied in time.",
+      "revId": "52532c88f434a9b6c465268eea0ec026307ea15e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
