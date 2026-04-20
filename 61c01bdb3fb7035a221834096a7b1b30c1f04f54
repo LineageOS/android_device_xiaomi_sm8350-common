@@ -33,6 +33,24 @@
       "message": "But it has a logical conflict with this\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8350-common/+/465700",
       "revId": "61c01bdb3fb7035a221834096a7b1b30c1f04f54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "110c94e8_18c0429d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-20T09:01:34Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8350-common/+/465700/comments/433228b7_1abc68f4",
+      "parentUuid": "3e71b843_eb13b0a2",
+      "revId": "61c01bdb3fb7035a221834096a7b1b30c1f04f54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
