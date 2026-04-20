@@ -16,6 +16,23 @@
       "message": "we didn\u0027t brought up oss audio hal in time :(",
       "revId": "61c01bdb3fb7035a221834096a7b1b30c1f04f54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e71b843_eb13b0a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2026-04-20T08:50:24Z",
+      "side": 1,
+      "message": "But it has a logical conflict with this\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8350-common/+/465700",
+      "revId": "61c01bdb3fb7035a221834096a7b1b30c1f04f54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
