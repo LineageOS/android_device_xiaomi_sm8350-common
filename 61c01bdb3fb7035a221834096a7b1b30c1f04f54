@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4070ec4_d2e044dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-20T08:30:42Z",
+      "side": 1,
+      "message": "we didn\u0027t brought up oss audio hal in time :(",
+      "revId": "61c01bdb3fb7035a221834096a7b1b30c1f04f54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
