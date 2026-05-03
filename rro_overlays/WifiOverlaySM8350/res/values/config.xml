@@ -19,6 +19,9 @@
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
+    <!-- boolean indicating whether or not to auto-upgrade band setting configuration to dual bands during cloud configuration restore when device supported -->
+    <bool name="config_wifiSoftapAutoUpgradeToBridgedConfigWhenSupported">false</bool>
+
     <!-- List of allowed channels in 2GHz band for softap. If the device doesn't want to restrict
          channels this should be empty. Values is a comma separated channel string and/or channel
          range string like '1-6,11'. -->
@@ -54,13 +57,32 @@
     <!-- Indicates that connected MAC randomization is supported on this device -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 
+    <!-- Indicates that p2p MAC randomization is supported on this device -->
+    <bool name="config_wifi_p2p_mac_randomization_supported">true</bool>
+
+    <!-- Configure wifi tcp buffersizes in the form:
+         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,524288,1048576,4194304</string>
+
     <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
     <bool name="config_wifiSoftapAcsIncludeDfs">true</bool>
 
-    <!-- A boolean indicate if device supports ser channel on the Aware data-path setup. If the
-    value is false, channel setting on the data-path request will be ignored.
-    -->
-    <bool name="config_wifiSupportChannelOnDataPath">true</bool>
+    <!-- integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
+    <integer name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
+
+    <!-- Enable Aware NDP interface selection on interface that already has network set up.
+     Note: the default AOSP Android does not support multiple networks on the same Aware NDI.
+     Enabling this configuration will restore legacy behavior but may result in incorrect behavior.
+     -->
+    <bool name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
+
+    <!-- Indicates that SAE Hash-to-Element is supported on this device -->
+    <bool name="config_wifiSaeH2eSupported">true</bool>
+
+    <!-- Integer threshold for max number of WifiConfigurations that can be saved on the device.
+         A value of -1 indicates no limit. If a max number is specified, then under-used configs will
+         be deleted to make room for new configs.-->
+    <integer name="config_wifiMaxNumWifiConfigurations">1000</integer>
 
     <!-- Indicates whether or not the WLAN driver supports the NL80211_CMD_REG_CHANGE or
          NL80211_CMD_WIPHY_REG_CHANGE events which indicate the current country code which is
@@ -70,4 +92,25 @@
          immediately after the country code is sent to the driver (if the method returns a
          success). -->
     <bool name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
+
+    <!-- Wifi driver supports Opportunistic Wireless Encryption (OWE) Transition
+         aka Enhanced Open for Soft-AP -->
+    <bool name="config_wifiSoftapOweTransitionSupported">true</bool>
+
+    <!-- Wifi driver supports Opportunistic Wireless Encryption (OWE)
+         aka Enhanced Open for Soft-AP -->
+    <bool name="config_wifiSoftapOweSupported">true</bool>
+
+    <!-- Lists each alternate character set per locale language for SSID translation to UTF-8. This
+         will translate all SSIDs encoded with the specified character set from the native layer
+         into UTF-8 SSIDs. The translated SSIDs are then converted back to the original character
+         set when passed back to the native layer. This effectively switches all non-UTF-8 APs into
+         UTF-8 APs from the perspective of the framework and apps, and is intended to provide
+         backwards compatibility with apps that only work with UTF-8 SSIDs. Values must be in the
+         form of the locale language and canonical java.nio Charset name, separated by a comma. If
+         the locale language is "all", then the character set will apply to all locale languages
+         that do not specify their own character set. -->
+    <string-array name="config_wifiCharsetsForSsidTranslation" translatable="false">
+        <item>zh,GBK</item>
+    </string-array>
 </resources>
