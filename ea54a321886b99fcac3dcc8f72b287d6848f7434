@@ -16,6 +16,23 @@
       "message": "good on renoir",
       "revId": "ea54a321886b99fcac3dcc8f72b287d6848f7434",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b85a0775_2ab88ff5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-07-02T16:05:12Z",
+      "side": 1,
+      "message": "```\nitsvixano@asus /media/samsung_ssd/los23/out/target/product/venus (lineage-23.2)\n[ 18:04:29 ]\n\n$ find vendor -name libvndfwk_detect_jni.qti.so\nvendor/lib64/libvndfwk_detect_jni.qti.so\nvendor/lib/libvndfwk_detect_jni.qti.so\nvendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so\n```",
+      "revId": "ea54a321886b99fcac3dcc8f72b287d6848f7434",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
