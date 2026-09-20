@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6ba1fac_f630f71e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-09-20T05:41:14Z",
+      "side": 1,
+      "message": "tmp, until we fix the issue on our kernel",
+      "revId": "c76b9ec03ada3b54da4dd84d56ef14527abe6267",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
