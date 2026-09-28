@@ -172,5 +172,5 @@
     </string-array>
 
     <!-- Default: 60 MB. Bytes that the PinnerService will pin for Home app -->
-    <integer name="config_pinnerHomePinBytes">6291456</integer>
+    <integer name="config_pinnerHomePinBytes">62914560</integer>
 </resources>
