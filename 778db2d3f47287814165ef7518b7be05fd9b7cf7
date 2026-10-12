@@ -16,6 +16,23 @@
       "message": "Chain is fine on `lisa` and `venus`",
       "revId": "778db2d3f47287814165ef7518b7be05fd9b7cf7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "403a8cf1_0c5b7940",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-10-12T12:45:16Z",
+      "side": 1,
+      "message": "renoir boots and works fine too",
+      "revId": "778db2d3f47287814165ef7518b7be05fd9b7cf7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
