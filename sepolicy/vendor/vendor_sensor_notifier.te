@@ -1,0 +1,10 @@
+type vendor_sensor_notifier, domain;
+type vendor_sensor_notifier_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(vendor_sensor_notifier)
+
+r_dir_file(vendor_sensor_notifier, vendor_sysfs_graphics)
+
+# for libssccalapi
+allow vendor_sensor_notifier self:{ socket qipcrtr_socket } create_socket_perms;
+allowxperm vendor_sensor_notifier self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctls;
